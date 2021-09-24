@@ -9,7 +9,6 @@ MarkupSafe==2.0.1
 marshmallow==3.13.0
 marshmallow-enum==1.5.1
 mypy-extensions==0.4.3
--e git+ssh://git@github.com/arpancodes/protectsql.git@60664237754acfd9e9f74a27fb33dd77db8e551e#egg=protectsql
 psutil==5.8.0
 pyre-check==0.9.6
 pyre-extensions==0.0.22
