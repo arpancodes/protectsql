@@ -1,10 +1,10 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
     name='protectsql',
-    version='0.0.2',
+    version='0.0.5',
     author="Arpan Abhishek",
     author_email="arpanforbusiness@gmail.com",
     description="A small package to track SQL injection in flask app",
@@ -14,9 +14,14 @@ setup(
     project_urls={
         "Bug Tracker": "https://github.com/arpancodes/protectsql/issues",
     },
+    install_requires=[
+        "Click",
+        "Flask",
+        "Pyre-check"
+    ],
     py_modules=['protectsql'],
     package_dir={"": "."},
-    packages=setuptools.find_packages(where="."),
+    packages=find_packages(where="."),
     entry_points={
         'console_scripts': [
             'protectsql = protectsql.commands:protectsql',
